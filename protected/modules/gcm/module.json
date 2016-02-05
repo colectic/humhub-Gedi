@@ -1,0 +1,18 @@
+{
+    "id": "gcm",
+    "name": "GCM",
+    "description": "GCM server and webservice provider",
+    "keywords": ["gcm"],
+    "version": "0.1",
+    "authors": [
+        {
+            "name": "Fèlix Casanellas"
+        }
+    ],
+    "homepage": "https://",
+    "license": "AGPL",
+    "time": "2015-12-09",
+    "humhub": {
+        "minVersion": "0.20"
+    }
+}

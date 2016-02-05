@@ -1,0 +1,18 @@
+{
+    "id": "rss",
+    "name": "RSS",
+    "description": "RSS feed",
+    "keywords": ["rss"],
+    "version": "0.1",
+    "authors": [
+        {
+            "name": "Fèlix Casanellas"
+        }
+    ],
+    "homepage": "https://",
+    "license": "AGPL",
+    "time": "2015-12-09",
+    "humhub": {
+        "minVersion": "0.20"
+    }
+}
