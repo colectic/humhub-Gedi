@@ -78,7 +78,14 @@ class AccountLogin extends Model
      * @return boolean whether the user is logged in successfully
      */
     public function login()
-    {
+    {	
+    	/**************************************
+    	 * TEBPATCH (ADD) @fcasanellas 27/05/2016
+    	 * #USR001 Força la cookie d'identitat
+    	 * NEWCODE ***************************/
+    	$this->rememberMe = true;
+    	/*************************************
+    	 * END TEBPATCH **********************/
         if ($this->validate() && Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0)) {
         	$this->_user->last_login = new Expression('NOW()');
         	$this->_user->save();

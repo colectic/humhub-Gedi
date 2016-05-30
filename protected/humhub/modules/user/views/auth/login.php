@@ -31,12 +31,20 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', 'Login');
                 <?php echo $form->passwordField($model, 'password', array('class' => 'form-control', 'id' => 'login_password', 'placeholder' => Yii::t('UserModule.views_auth_login', 'password'))); ?>
                 <?php echo $form->error($model, 'password'); ?>
             </div>
-
+			
+			<?php
+			/**************************************
+			 * TEBPATCH (DEL) @fcasanellas 27/05/2016
+			 * #USR001 Força la cookie d'identitat
+			 * NEWCODE ***************************
             <div class="checkbox">
                 <label>
                     <?php echo $form->checkBox($model, 'rememberMe'); ?> <?php echo $model->getAttributeLabel('rememberMe'); ?>
                 </label>
             </div>
+            /*************************************
+    	 	 * END TEBPATCH **********************/ 
+			?>
 
             <hr>
             <div class="row">
